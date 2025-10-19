@@ -88,9 +88,35 @@ You can deploy this website easily on AWS using either **S3** or **EC2** dependi
        ]
    }
 
-5. **Access your website**
-   - Use the S3 endpoint URL shown in the static website hosting section
-   - (e.g., http://your-bucket-name.s3-website-region.amazonaws.com).
+
+5. **Using CloudFront CDN**
+   - To make your website faster and enable HTTPS, set up Amazon CloudFront:
+   - Go to CloudFront Console > Create Distribution
+   - Set Origin Domain to your S3 static website endpoint (e.g., saikiran.dev.s3-website.ap-south-1.amazonaws.com)
+   - Set Viewer Protocol Policy: Redirect HTTP to HTTPS
+  - Cache Policy: Use “CachingOptimized” (for fast resume/photo loads)
+  - Alternate Domain Names (CNAMEs): Add your domain (e.g., www.saikiran.dev)
+  - Add SSL Certificate:
+  - Use AWS Certificate Manager (ACM) to request a free SSL cert
+  - Validate via DNS or Email
+Deploy
+✅ Bonus: CloudFront caches resume/photo/script content at edge locations = fast global delivery!
+
+
+6. **Using Route 53 for Custom Domain**
+   - To connect your domain (e.g., saikiran.dev or saikiran.in):
+   - Register a Domain (via Route 53 or external registrar like GoDaddy)
+   - Create a Hosted Zone in Route 53
+   - Add a Record Set (A or CNAME)
+   - Type: A Record (Alias)
+   - Alias: Yes
+   - Alias Target: Your CloudFront Distribution DNS
+If using external registrar:
+   - Update NS records in domain settings to match Route 53’s hosted zone
+   - Wait for DNS to propagate (may take 5–30 mins)
+     
+7. **Access your website**
+   - Enter your domain name to access your website.
 
 ### Using EC2 (More Control, Suitable for Dynamic Backends)
 
