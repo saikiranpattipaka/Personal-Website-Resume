@@ -52,6 +52,18 @@ This repository contains the full source code for my personal website that inclu
 
 ---
 
+## Project Structure
+```
+/ (root)
+├── index.html # Main HTML page
+├── style.css # Stylesheet
+├── script.js # JavaScript typing animation
+├── profile.jpg # Profile photo
+├── resume.pdf # Resume file
+└── README.md # This documentation
+```
+---
+
 ## Hosting on AWS
 
 You can deploy this website easily on AWS using either **S3** or **EC2** depending on your requirements.
@@ -151,13 +163,23 @@ sudo chmod -R 755 /var/www/html
 
 4. **Access your website**
    - Open your EC2 instance's public IP or public DNS in a browser.
-## Project Structure
+
+git clone https://github.com/saikiranpattipaka/your-repo.git
+cd your-repo
+python3 -m http.server
+
+---
+### Usage
 ```
-/ (root)
-├── index.html # Main HTML page
-├── style.css # Stylesheet
-├── script.js # JavaScript typing animation
-├── profile.jpg # Profile photo
-├── resume.pdf # Resume file
-└── README.md # This documentation
+git clone https://github.com/saikiranpattipaka/your-repo.git
+cd your-repo
+python3 -m http.server
 ```
+ - Then open http://localhost:8000 in your browser
+
+---
+### contact
+📬 Contact
+📧 Email: saikiranpattipaka@outlook.com
+🔗 LinkedIn: linkedin.com/in/saikiranpattipaka
+🐙 GitHub: github.com/saikiranpattipaka
