@@ -163,11 +163,11 @@ sudo chmod -R 755 /var/www/html
 
 4. **Access your website**
    - Open your EC2 instance's public IP or public DNS in a browser.
-
+```
 git clone https://github.com/saikiranpattipaka/your-repo.git
 cd your-repo
 python3 -m http.server
-
+```
 ---
 ### Usage
 ```
@@ -179,7 +179,7 @@ python3 -m http.server
 
 ---
 ### contact
-📬 Contact
-📧 Email: saikiranpattipaka@outlook.com
-🔗 LinkedIn: linkedin.com/in/saikiranpattipaka
-🐙 GitHub: github.com/saikiranpattipaka
+   - 📬 Contact
+   - 📧 Email: saikiranpattipaka@outlook.com
+   - 🔗 LinkedIn: linkedin.com/in/saikiranpattipaka
+   - 🐙 GitHub: github.com/saikiranpattipaka
