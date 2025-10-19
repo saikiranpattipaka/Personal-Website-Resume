@@ -52,17 +52,6 @@ This repository contains the full source code for my personal website that inclu
 
 ---
 
-
-/ (root)
-├── index.html # Main HTML page
-├── style.css # Stylesheet
-├── script.js # JavaScript typing animation
-├── profile.jpg # Profile photo
-├── resume.pdf # Resume file
-└── README.md # This documentation
-
----
-
 ## Hosting on AWS
 
 You can deploy this website easily on AWS using either **S3** or **EC2** depending on your requirements.
@@ -137,4 +126,12 @@ sudo chmod -R 755 /var/www/html
 4. **Access your website**
    - Open your EC2 instance's public IP or public DNS in a browser.
 ## Project Structure
-
+```
+/ (root)
+├── index.html # Main HTML page
+├── style.css # Stylesheet
+├── script.js # JavaScript typing animation
+├── profile.jpg # Profile photo
+├── resume.pdf # Resume file
+└── README.md # This documentation
+```
