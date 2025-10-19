@@ -171,7 +171,7 @@ python3 -m http.server
 ---
 ### Usage
 ```
-git clone https://github.com/saikiranpattipaka/your-repo.git
+git clone https://github.com/saikiranpattipaka/Personal-Website-Resume.git
 cd your-repo
 python3 -m http.server
 ```
