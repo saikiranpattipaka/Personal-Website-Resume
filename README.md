@@ -179,7 +179,6 @@ python3 -m http.server
 
 ---
 ### contact
-   - 📬 Contact
    - 📧 Email: saikiranpattipaka@outlook.com
    - 🔗 LinkedIn: linkedin.com/in/saikiranpattipaka
    - 🐙 GitHub: github.com/saikiranpattipaka
