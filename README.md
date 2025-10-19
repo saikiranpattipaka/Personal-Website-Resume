@@ -106,13 +106,13 @@ You can deploy this website easily on AWS using either **S3** or **EC2** dependi
    - Go to CloudFront Console > Create Distribution
    - Set Origin Domain to your S3 static website endpoint (e.g., saikiran.dev.s3-website.ap-south-1.amazonaws.com)
    - Set Viewer Protocol Policy: Redirect HTTP to HTTPS
-  - Cache Policy: Use “CachingOptimized” (for fast resume/photo loads)
-  - Alternate Domain Names (CNAMEs): Add your domain (e.g., www.saikiran.dev)
-  - Add SSL Certificate:
-  - Use AWS Certificate Manager (ACM) to request a free SSL cert
-  - Validate via DNS or Email
-Deploy
-✅ Bonus: CloudFront caches resume/photo/script content at edge locations = fast global delivery!
+   - Cache Policy: Use “CachingOptimized” (for fast resume/photo loads)
+   - Alternate Domain Names (CNAMEs): Add your domain (e.g., www.saikiran.dev)
+   - Add SSL Certificate:
+   - Use AWS Certificate Manager (ACM) to request a free SSL cert
+   - Validate via DNS or Email
+   - Deploy
+   - ✅ Bonus: CloudFront caches resume/photo/script content at edge locations = fast global delivery!
 
 
 6. **Using Route 53 for Custom Domain**
